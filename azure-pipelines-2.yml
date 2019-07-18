@@ -35,12 +35,12 @@ steps:
 
 
 schedules:
-- cron: "*/10 * * * *"
+- cron: "*/2 * * * *"
   displayName: Every 10 minutes build
   branches:
     include:
     - master
-    - releases/*
+#    - releases/*
     exclude:
     - releases/ancient/*
   always: 'true'
